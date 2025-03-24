@@ -8,7 +8,8 @@ export default function Courses() {
 
   return (
     <>
-      <div className={favoriteCourses.length > 0 ? 'container-fluid my-5' : 'container my-5'}>
+      <p>{favoriteCourses.length}</p>
+      <div className={`my-5 ${favoriteCourses.length > 0 ? 'container-fluid' : 'container'} ${favoriteCourses.length <= 4 ? 'fix-spacing-footer-fav' : ''}`}>
         <section className="row">
           <div className="col text-center">
             <h2>Revise seus cursos favoritos e continue sua jornada de <br /> aprendizado com o que mais te interessa!</h2>

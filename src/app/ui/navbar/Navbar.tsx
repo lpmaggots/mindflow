@@ -41,11 +41,13 @@ export default function Navbar() {
             <div className="d-flex">
               <Link
                 href="/favorite"
-                className="nav-link d-flex align-items-center justify-content-between"
+                className="no-text-decoration d-flex align-items-center justify-content-between"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <i className={`bi ${isHovered || pathname === '/favorite' ? 'bi-star-fill' : 'bi-star'} text-warning`}></i>
+                <span className='px-1'></span>
+                <span className='text-white'>Favoritos</span>
               </Link>
               <div className="px-2"></div>
               <div className="dropdown">

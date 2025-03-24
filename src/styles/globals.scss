@@ -36,6 +36,12 @@
   flex-shrink: 0;
 }
 // outhers
-.fix-spacing-footer {
+.no-text-decoration {
+  text-decoration: none;
+}
+.fix-spacing-footer-course {
   height: calc(100vh - 352px);
+}
+.fix-spacing-footer-fav {
+  height: calc(100vh - 424px);
 }

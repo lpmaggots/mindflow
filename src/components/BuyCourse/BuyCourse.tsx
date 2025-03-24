@@ -13,7 +13,7 @@ interface CourseProps {
 const Course: React.FC<CourseProps> = ({ id, title, description, created_at, price }) => {
   return (
     <>
-      <div className="container fix-spacing-footer mt-5">
+      <div className="container fix-spacing-footer-course mt-5">
         <section className="row">
           <div className="col mb-5">
             <nav aria-label="breadcrumb">
