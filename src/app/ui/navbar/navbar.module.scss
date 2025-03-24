@@ -1,0 +1,6 @@
+.customDropdownChevron::after {
+  vertical-align: 0.150em;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;  // Mostra o menu dropdown ao passar o mouse
+}

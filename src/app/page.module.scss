@@ -1,0 +1,39 @@
+.containerBanner {
+  position: relative;
+  background-image: url('../../public/images/intro-banner-optimized.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.containerBanner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.containerBanner > section {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 20px;
+}
+.titleLine {
+  width: 10%;
+  margin-top: 25px;
+  background-color: #fff;
+  border-top: 2px solid;
+}
+.customSquare {
+  width: 400px;
+  height: 300px;
+  left: -15%;
+  background: linear-gradient(to left, var(--c-purple), transparent);
+  z-index: 0;
+}
+.customSquareImage {
+  z-index: 5;
+}

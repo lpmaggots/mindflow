@@ -1,0 +1,64 @@
+@use 'coolors';
+// Mixin for general styles
+@mixin button-style($color) {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  height: auto;
+  border: 2px solid $color;
+  background: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 10px;
+  color: $color;
+
+  &:hover {
+    background: $color;
+    color: white;
+  }
+}
+// Mixin for sizes
+@mixin button-size($width, $height, $font-size, $padding: 8px 10px) {
+  width: $width;
+  height: $height;
+  font-size: $font-size;
+  padding: $padding;
+}
+// (Purple)
+.purple-button-md {
+  @include button-style(var(--c-purple));
+  @include button-size(auto, auto, 14px);
+}
+
+.purple-button-lg {
+  @include button-style(var(--c-purple));
+  @include button-size(200px, 80px, 16px);
+}
+
+// (Green)
+.green-button-md {
+  @include button-style(var(--c-green));
+  @include button-size(auto, auto, 14px);
+}
+
+.green-button-lg {
+  @include button-style(var(--c-green));
+  @include button-size(200px, 80px, 16px);
+}
+
+// (FAB)
+.fab-btn {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  }
+}
