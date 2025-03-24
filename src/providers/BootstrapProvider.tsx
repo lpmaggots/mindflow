@@ -1,14 +1,14 @@
-'use client'
+"use client"; 
+import { useEffect, type ReactNode } from "react";
 
-import { useEffect } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import '@popperjs/core'
+interface BootstrapProviderProps {
+  children: ReactNode;
+}
 
-export default function BootstrapProvider({ children }: { children: React.ReactNode }) {
+export default function BootstrapProvider({ children }: BootstrapProviderProps) {
   useEffect(() => {
-    require("bootstrap/dist/js/bootstrap.bundle.min.js")
-  }, [])
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
 
-  return <>{children}</>
+  return <>{children}</>;
 }

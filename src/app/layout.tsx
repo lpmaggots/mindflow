@@ -4,6 +4,7 @@ import "@/styles/globals.scss";
 import { Geist, Geist_Mono } from "next/font/google";
 // bootstrap
 import BootstrapProvider from "@/providers/BootstrapProvider";
+import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css";
 // components
 import Navbar from "@/app/ui/navbar/Navbar";
