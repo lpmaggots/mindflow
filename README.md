@@ -1,4 +1,4 @@
-# 🇧🇷 Mindflow - Plataforma de Cursos com Next.js, TypeScript, Zustand e Bootstrap
+Mindflow - Plataforma de Cursos com Next.js, TypeScript, Zustand e Bootstrap
 
 Este é um projeto de front-end que tem como objetivo a criação de uma interface simples e eficiente para exibição de cursos e interação com as informações relacionadas. O projeto foi desenvolvido com **Next.js**, **TypeScript**, e **Zustand** para gerenciamento de estado, proporcionando uma navegação fácil e dinâmica para os usuários. A interface foi construída com **Bootstrap**, garantindo um design responsivo e elegante.
 
