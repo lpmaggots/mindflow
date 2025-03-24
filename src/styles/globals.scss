@@ -15,6 +15,9 @@
 .text-green {
   color: var(--c-green)
 }
+.text-grey-light {
+  color: var(--c-grey-light)
+}
 // details
 .link-circle-purple {
   background-color: var(--c-purple);
@@ -43,5 +46,5 @@
   height: calc(100vh - 352px);
 }
 .fix-spacing-footer-fav {
-  height: calc(100vh - 424px);
+  height: calc(100vh - 400px);
 }

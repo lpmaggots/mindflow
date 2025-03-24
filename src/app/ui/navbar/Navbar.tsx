@@ -46,8 +46,12 @@ export default function Navbar() {
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <i className={`bi ${isHovered || pathname === '/favorite' ? 'bi-star-fill' : 'bi-star'} text-warning`}></i>
-                <span className='px-1'></span>
-                <span className='text-white'>Favoritos</span>
+                <span className="px-1"></span>
+                <span
+                  className={`${isHovered || pathname === '/favorite' ? 'text-white' : 'text-grey-light'}`}
+                >
+                  Favoritos
+                </span>
               </Link>
               <div className="px-2"></div>
               <div className="dropdown">

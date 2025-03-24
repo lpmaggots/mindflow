@@ -8,7 +8,6 @@ export default function Courses() {
 
   return (
     <>
-      <p>{favoriteCourses.length}</p>
       <div className={`my-5 ${favoriteCourses.length > 0 ? 'container-fluid' : 'container'} ${favoriteCourses.length <= 4 ? 'fix-spacing-footer-fav' : ''}`}>
         <section className="row">
           <div className="col text-center">
